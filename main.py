@@ -1,7 +1,7 @@
 import fitz  # PyMuPDF
 
 # Открываем исходный PDF файл
-input_pdf_path = "текст по англискому.pdf"
+input_pdf_path = "text.pdf"
 pdf_document = fitz.open(input_pdf_path)
 
 # Список слов для выделения
@@ -30,7 +30,7 @@ def highlight_words(pdf_document, words_to_highlight):
 highlight_words(pdf_document, words_to_highlight)
 
 # Сохраняем измененный PDF
-output_pdf_path = "highlighted_текст_по_английскому.pdf"
+output_pdf_path = "highlighted_text.pdf"
 pdf_document.save(output_pdf_path)
 
 output_pdf_path
